@@ -45,7 +45,7 @@ plugins:
  - jekyll-scholar
  - jekyll-include-cache
 
-exclude: ['README.md', 'Makefile', 'Gemfile', 'Gemfile.lock']
+exclude: ['README.md', 'Makefile', 'Gemfile', 'Gemfile.lock', "bundles"]
 
 scholar:
   style: apa
