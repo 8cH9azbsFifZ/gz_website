@@ -3,10 +3,10 @@
   <channel>
     <title>Dr. Gerolf Ziegenhain</title>
     <description>Head of Management Services, DFS</description>
-    <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//</link>
-    <atom:link href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 16 Oct 2020 14:01:03 -0500</pubDate>
-    <lastBuildDate>Fri, 16 Oct 2020 14:01:03 -0500</lastBuildDate>
+    <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//</link>
+    <atom:link href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 16 Oct 2020 14:23:46 -0500</pubDate>
+    <lastBuildDate>Fri, 16 Oct 2020 14:23:46 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;p&gt;You can find my old blog &lt;a href=&quot;https://gerolfziegenhain.wordpress.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 10 Dec 2019 10:49:38 -0600</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2019-12-10-old-blog.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2019-12-10-old-blog.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2019-12-10-old-blog.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2019-12-10-old-blog.html</guid>
         
         
         <category>Blog</category>
@@ -27,8 +27,8 @@
         <description>&lt;p&gt;Recently I have created Garmin maps containing cave locations based on OpenTopoMaps. These maps contain height lines and custom POIs of caves. They can be used both on Garmin devices and Oruxmaps (on Android). A Makefile for Garmin maps is provided in&lt;a href=&quot;https://github.com/8cH9azbsFifZ/garmin-opentopo&quot;&gt; this Repo&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Aug 2018 11:49:38 -0500</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2018-08-11-building-garmin-maps.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2018-08-11-building-garmin-maps.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2018-08-11-building-garmin-maps.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2018-08-11-building-garmin-maps.html</guid>
         
         <category>Garmin</category>
         
@@ -48,8 +48,8 @@
 &lt;p&gt;(B) CE Kennzeichnung nicht notwendig? In der &lt;a href=&quot;http://eur-lex.europa.eu/eli/dir/2014/53/oj&quot;&gt;Richtlinie 2014/53/EU&lt;/a&gt;, Anhang I, Paragraph 1, (a) sind “&lt;em&gt;[..] Bausätze für Funkanalgen, die von Funkamateuren zusammengebaut werden [..]&lt;/em&gt;” explizit von der Kennzeichnungspflicht ausgenommen.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Jul 2017 03:02:10 -0500</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2017-07-15-einfuhr-von-amateurfunk-bausatzen-nach-deutschland.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2017-07-15-einfuhr-von-amateurfunk-bausatzen-nach-deutschland.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2017-07-15-einfuhr-von-amateurfunk-bausatzen-nach-deutschland.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2017-07-15-einfuhr-von-amateurfunk-bausatzen-nach-deutschland.html</guid>
         
         <category>Hardware</category>
         
@@ -85,8 +85,8 @@
 
 </description>
         <pubDate>Tue, 13 Sep 2016 14:37:03 -0500</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-qrp-appliance.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-qrp-appliance.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-qrp-appliance.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-qrp-appliance.html</guid>
         
         <category>Ham Radio</category>
         
@@ -104,8 +104,8 @@
 &lt;p&gt;&lt;img src=&quot;/images/posts/2016-09-13-verified-all-band-trx-for-the-yaesu-ft-817-nd/bild.png&quot; alt=&quot;Bild&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Sep 2016 14:34:27 -0500</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-verified-all-band-trx-for-the-yaesu-ft-817-nd.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-verified-all-band-trx-for-the-yaesu-ft-817-nd.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-verified-all-band-trx-for-the-yaesu-ft-817-nd.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2016-09-13-verified-all-band-trx-for-the-yaesu-ft-817-nd.html</guid>
         
         
         <category>Ham Radio</category>
@@ -128,8 +128,8 @@
 
 </description>
         <pubDate>Sat, 13 Apr 2013 11:13:00 -0500</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2013-04-13-raspi-as-wspr-transmitter.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2013-04-13-raspi-as-wspr-transmitter.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2013-04-13-raspi-as-wspr-transmitter.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2013-04-13-raspi-as-wspr-transmitter.html</guid>
         
         
         <category>Ham Radio</category>
@@ -178,8 +178,8 @@
 
 </description>
         <pubDate>Wed, 19 Dec 2012 14:50:00 -0600</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2012-12-19-outdoor-qrp-equipment.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2012-12-19-outdoor-qrp-equipment.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2012-12-19-outdoor-qrp-equipment.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2012-12-19-outdoor-qrp-equipment.html</guid>
         
         <category>Ham Radio</category>
         
@@ -197,8 +197,8 @@
 &lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=81Q7szAleCU&quot;&gt;Video&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 03 May 2010 13:05:00 -0500</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2010-05-03-lattice-defects.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2010-05-03-lattice-defects.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2010-05-03-lattice-defects.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2010-05-03-lattice-defects.html</guid>
         
         
         <category>Physics</category>
@@ -211,8 +211,8 @@
 
 </description>
         <pubDate>Mon, 24 Jan 2005 15:31:00 -0600</pubDate>
-        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2005-01-24-freies-buch-theoretische-physik.html</link>
-        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2005-01-24-freies-buch-theoretische-physik.html</guid>
+        <link>file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2005-01-24-freies-buch-theoretische-physik.html</link>
+        <guid isPermaLink="true">file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2005-01-24-freies-buch-theoretische-physik.html</guid>
         
         
         <category>Physics</category>
