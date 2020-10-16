@@ -2,11 +2,6 @@
 
 
 
-build:
-	bundle exec jekyll build
-	git add .
-	git commit -a -m "new build"
-
 deploy:
 	git commit -a -m "new deployment"
 	git push
