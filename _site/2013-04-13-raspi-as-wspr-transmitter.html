@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
 
-  <title>Freies Buch: Theoretische Physik</title>
-  <meta name="description" content="Im Rahmen der Vorbereitungen auf die Physik Diplomprüfungen habe ich mit einigen Kommilitonen ein Buch über theoretische Physik verfasst: Theoretische Physik: Thermodynamik und statistische Mechanik.
+  <title>Raspi As WSPR Transmitter</title>
+  <meta name="description" content="Recently the Raspberry Pi (Raspi) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a WSPR transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the WsprryPi sources, built a 30m QRP filter using the ugly method and connected everything to my doublet antenna.
+
 ">
   <meta name="author" content="Dr. Gerolf Ziegenhain">
   <meta name="HandheldFriendly" content="True">
@@ -17,15 +18,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Freies Buch: Theoretische Physik">
-  <meta name="twitter:description" content="Im Rahmen der Vorbereitungen auf die Physik Diplomprüfungen habe ich mit einigen Kommilitonen ein Buch über theoretische Physik verfasst: Theoretische Physik: Thermodynamik und statistische Mechanik.
+  <meta name="twitter:title" content="Raspi As WSPR Transmitter">
+  <meta name="twitter:description" content="Recently the Raspberry Pi (Raspi) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a WSPR transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the WsprryPi sources, built a 30m QRP filter using the ugly method and connected everything to my doublet antenna.
+
 ">
   
   <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Freies Buch: Theoretische Physik">
-  <meta property="og:description" content="Im Rahmen der Vorbereitungen auf die Physik Diplomprüfungen habe ich mit einigen Kommilitonen ein Buch über theoretische Physik verfasst: Theoretische Physik: Thermodynamik und statistische Mechanik.
+  <meta property="og:title" content="Raspi As WSPR Transmitter">
+  <meta property="og:description" content="Recently the Raspberry Pi (Raspi) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a WSPR transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the WsprryPi sources, built a 30m QRP filter using the ugly method and connected everything to my doublet antenna.
+
 ">
   <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
 
@@ -49,8 +52,8 @@
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/css/main.css?1602877280102207500">
-  <link rel="canonical" href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2005-01-24-freies-buch-theoretische-physik.html">
+  <link rel="stylesheet" href="/css/main.css?1602877716979790300">
+  <link rel="canonical" href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2013-04-13-raspi-as-wspr-transmitter.html">
   <link rel="alternate" type="application/rss+xml" title="Dr. Gerolf Ziegenhain" href="/feed.xml">
 </head>
 
@@ -171,14 +174,22 @@
         <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2005-01-24 15:31" class="post-meta__date date">24 Jan 2005</time>
+      <time datetime="2013-04-13 11:13" class="post-meta__date date">13 Apr 2013</time>
       
     </div>
-    <h1 class="post-title">Freies Buch: Theoretische Physik</h1>
+    <h1 class="post-title">Raspi As WSPR Transmitter</h1>
   </header>
 
   <section class="post">
-    <p>Im Rahmen der Vorbereitungen auf die Physik Diplomprüfungen habe ich mit einigen Kommilitonen ein Buch über theoretische Physik verfasst: <a href="/doc/theo_TD.pdf">Theoretische Physik: Thermodynamik und statistische Mechanik</a>.</p>
+    <p>Recently the <a href="http://www.raspberrypi.org/">Raspberry Pi (Raspi)</a> has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a <a href="http://wsprnet.org/drupal/">WSPR</a> transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the <a href="https://github.com/8cH9azbsFifZ/WsprryPi">WsprryPi</a> sources, built a <a href="http://www.gqrp.com/harmonic_filters.pdf">30m QRP filter</a> using the ugly method and connected everything to my <a href="http://www.norcalqrp.org/files/NorCalDoubletAntenna.pdf">doublet antenna</a>.</p>
+
+<p><img src="/images/posts/2013-04-13-raspi-as-wspr-transmitter/IMG_1521.JPG" alt="Raspi as WSPR Transmitter" /></p>
+
+<p>Immediately my 10mW have been received in 743km distance by G6HUI (<a href="http://wsprnet.org/drupal/wsprnet/spots">WSPR Spots</a>) and within two weeks I was received in a distance of 7869km. Not too bad with about 10mW:</p>
+
+<p><img src="/images/posts/2013-04-13-raspi-as-wspr-transmitter/wspr_dg6fl_us.png" alt="7869km with 10mW" /></p>
+
+<p>Information on how to do this yourself can be found in the <a href="https://github.com/8cH9azbsFifZ/WsprryPi">WsprryPi</a> repository.</p>
 
 
   </section>
@@ -194,7 +205,7 @@
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js?1602877280102207500"></script>
+<script type="text/javascript" src="/js/main.js?1602877716979790300"></script>
 
 
     </div>
