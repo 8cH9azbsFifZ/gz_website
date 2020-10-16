@@ -2,7 +2,7 @@
 title: Dr. Gerolf Ziegenhain
 description: 'Head of Management Services, DFS'
 url: 'https://g.ziegenhain.com'
-baseurl: ''
+baseurl: 'https://g.ziegenhain.com'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
