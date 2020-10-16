@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
 
-  <title>Lattice Defects</title>
-  <meta name="description" content="Stacking faults are colored in red, partial dislocations and the surfaces are colored in gray.  The  nucleation of plasticity is homogenous. An amorphous blob of defective particles is nucleated in the region of the maximal stress. Later a stacking fault is nucleated and cross glide sets in.
+  <title>Raspi As WSPR Transmitter</title>
+  <meta name="description" content="Recently the Raspberry Pi (Raspi) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a WSPR transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the WsprryPi sources, built a 30m QRP filter using the ugly method and connected everything to my doublet antenna.
 
 ">
   <meta name="author" content="Dr. Gerolf Ziegenhain">
@@ -18,16 +18,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Lattice Defects">
-  <meta name="twitter:description" content="Stacking faults are colored in red, partial dislocations and the surfaces are colored in gray.  The  nucleation of plasticity is homogenous. An amorphous blob of defective particles is nucleated in the region of the maximal stress. Later a stacking fault is nucleated and cross glide sets in.
+  <meta name="twitter:title" content="Raspi As WSPR Transmitter">
+  <meta name="twitter:description" content="Recently the Raspberry Pi (Raspi) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a WSPR transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the WsprryPi sources, built a 30m QRP filter using the ugly method and connected everything to my doublet antenna.
 
 ">
   
   <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Lattice Defects">
-  <meta property="og:description" content="Stacking faults are colored in red, partial dislocations and the surfaces are colored in gray.  The  nucleation of plasticity is homogenous. An amorphous blob of defective particles is nucleated in the region of the maximal stress. Later a stacking fault is nucleated and cross glide sets in.
+  <meta property="og:title" content="Raspi As WSPR Transmitter">
+  <meta property="og:description" content="Recently the Raspberry Pi (Raspi) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a WSPR transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the WsprryPi sources, built a 30m QRP filter using the ugly method and connected everything to my doublet antenna.
 
 ">
   <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
@@ -52,8 +52,8 @@
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/css/main.css?1576347576323056000">
-  <link rel="canonical" href="https://g.ziegenhain.com/2010-05-03-lattice-defects.html">
+  <link rel="stylesheet" href="/css/main.css?1602877280102207500">
+  <link rel="canonical" href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2013-04-13-raspi-as-wspr-transmitter.html">
   <link rel="alternate" type="application/rss+xml" title="Dr. Gerolf Ziegenhain" href="/feed.xml">
 </head>
 
@@ -174,16 +174,23 @@
         <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2010-05-03 20:05" class="post-meta__date date">3 May 2010</time>
+      <time datetime="2013-04-13 11:13" class="post-meta__date date">13 Apr 2013</time>
       
     </div>
-    <h1 class="post-title">Lattice Defects</h1>
+    <h1 class="post-title">Raspi As WSPR Transmitter</h1>
   </header>
 
   <section class="post">
-    <p>Stacking faults are colored in red, partial dislocations and the surfaces are colored in gray.  The  nucleation of plasticity is homogenous. An amorphous blob of defective particles is nucleated in the region of the maximal stress. Later a stacking fault is nucleated and cross glide sets in.</p>
+    <p>Recently the <a href="http://www.raspberrypi.org/">Raspberry Pi (Raspi)</a> has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a <a href="http://wsprnet.org/drupal/">WSPR</a> transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the <a href="https://github.com/8cH9azbsFifZ/WsprryPi">WsprryPi</a> sources, built a <a href="http://www.gqrp.com/harmonic_filters.pdf">30m QRP filter</a> using the ugly method and connected everything to my <a href="http://www.norcalqrp.org/files/NorCalDoubletAntenna.pdf">doublet antenna</a>.</p>
 
-<p><a href="http://www.youtube.com/watch?v=81Q7szAleCU">Video</a></p>
+<p><img src="/images/posts/2013-04-13-raspi-as-wspr-transmitter/IMG_1521.JPG" alt="Raspi as WSPR Transmitter" /></p>
+
+<p>Immediately my 10mW have been received in 743km distance by G6HUI (<a href="http://wsprnet.org/drupal/wsprnet/spots">WSPR Spots</a>) and within two weeks I was received in a distance of 7869km. Not too bad with about 10mW:</p>
+
+<p><img src="/images/posts/2013-04-13-raspi-as-wspr-transmitter/wspr_dg6fl_us.png" alt="7869km with 10mW" /></p>
+
+<p>Information on how to do this yourself can be found in the <a href="https://github.com/8cH9azbsFifZ/WsprryPi">WsprryPi</a> repository.</p>
+
 
   </section>
   
@@ -194,11 +201,11 @@
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2019 Dr. Gerolf Ziegenhain. All rights reserved.</span>
+  <span class="footer__copyright">&copy; 2020 Dr. Gerolf Ziegenhain. All rights reserved.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js?1576347576323056000"></script>
+<script type="text/javascript" src="/js/main.js?1602877280102207500"></script>
 
 
     </div>
