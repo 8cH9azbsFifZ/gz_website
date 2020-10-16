@@ -1,0 +1,8 @@
+#!/bin/bash
+git checkout jekyll -- _site
+git mv _site/* .	
+rmdir _site
+git add .
+git commit -a -m "new deployment"
+git push
+git checkout jekyll
