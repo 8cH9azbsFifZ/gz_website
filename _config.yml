@@ -1,8 +1,9 @@
 # Site settings
 title: Dr. Gerolf Ziegenhain
 description: 'Head of Management Services, DFS'
-url: 'https://g.ziegenhain.com'
-baseurl: 'https://g.ziegenhain.com'
+#url: 'https://g.ziegenhain.com'
+url: 'file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/'
+baseurl: 'file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
@@ -45,7 +46,7 @@ plugins:
  - jekyll-scholar
  - jekyll-include-cache
 
-exclude: ['README.md', 'Makefile', 'Gemfile', 'Gemfile.lock', "bundles"]
+exclude: ['README.md', 'Makefile', 'Gemfile', 'Gemfile.lock', "bundles", "build.sh"]
 
 scholar:
   style: apa
