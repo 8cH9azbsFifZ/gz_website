@@ -7,5 +7,5 @@ gem 'jekyll-include-cache', group: :jekyll_plugins
 gem 'jekyll-scholar' , group: :jekyll_plugins
 
 # Security fixes
-gem "kramdown", ">= 2.3.0"
+gem "kramdown", ">= 2.3.1"
 
