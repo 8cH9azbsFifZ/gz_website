@@ -1,36 +1,32 @@
-name: Testing the GitHub Pages publication
+name: github pages
 
 on:
-  push
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
 
 jobs:
-  jekyll:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-    # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
 
-    # Standard usage
-    - uses:  helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: hugo --minify
 
-    # Specify the Jekyll source location as a parameter
-    #    - uses: helaili/jekyll-action@v2
-    #  with:
-    #    token: ${{ secrets.GITHUB_TOKEN }}
-    #    jekyll_src: './'
-
-    # Specify the target branch (optional)
-    #- uses: helaili/jekyll-action@v2
-    #  with:
-    #    token: ${{ secrets.GITHUB_TOKEN }}
-    #    target_branch: 'gh-pages'
-
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
