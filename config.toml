@@ -1,16 +1,4 @@
 baseURL = "https://g.ziegenhain.family/"
 languageCode = "en-us"
 title = "Dr. Gerolf Ziegenhain"
-theme = "SimpleIntro"
-
-[params]
-    mainbg = "https://picsum.photos/1920/1080"
-    name = "John Doe"
-    mainTitle = "Simple-intro"
-    mainText = "Just simple intro theme for hugo"
-
-[menus]
-    [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "#about"
+theme = "ananke"
