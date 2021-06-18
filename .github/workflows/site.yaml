@@ -20,6 +20,7 @@ jobs:
     # Standard usage
     - uses:  helaili/jekyll-action@v2
       with:
+        jekyll_src: 'gz_website'
         token: ${{ secrets.GITHUB_TOKEN }}
 
     # Specify the Jekyll source location as a parameter
