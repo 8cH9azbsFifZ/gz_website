@@ -27,6 +27,5 @@ This is my current light-weight QRP equipment for hiking:
   * Sennheiser Earphones
   * Everything tied together using hook-and-loop-tape
 
-{% include image name="antenna.png" caption="Buddipole Antenna in Yosemite Park" %}
-{% include image name="qrp.png" caption="QRP Equipment" %}
-
+![antenna.png](Buddipole Antenna in Yosemite Park)
+![qrp.png](QRP Equipment)
