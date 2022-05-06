@@ -16,5 +16,4 @@ A QRP Appliance comes to live. It contains:
 - American Morse Paddle
 - Power Poles
 
-{% include image name="appliance.png" caption="Picture of the Prototype" %}
-
+![Picture of the Prototype](appliance.png)
