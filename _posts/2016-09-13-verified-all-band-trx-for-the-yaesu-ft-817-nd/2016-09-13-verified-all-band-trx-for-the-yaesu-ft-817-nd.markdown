@@ -13,4 +13,4 @@ The information available on the web may be misleading: the jumper enumeration i
 
 I have summarized the information on how to enable all-band TRX on the FT 817 ND in the picture below.
 
-![Bild](/images/posts/2016-09-13-verified-all-band-trx-for-the-yaesu-ft-817-nd/bild.png)
+![Bild](bild.png)
