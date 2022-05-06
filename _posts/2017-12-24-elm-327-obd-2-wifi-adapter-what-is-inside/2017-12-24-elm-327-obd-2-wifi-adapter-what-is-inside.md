@@ -10,16 +10,16 @@ categories: [Hardware]
 
 The following device
 
-{% include image name="elm-327-obd-2-wifi.jpg" caption="Product Picture" %}
+![Product Picture](elm-327-obd-2-wifi.jpg)
 
 Uses a PIC 18F25K80:
 
-{% include image name="img_4659.jpg" caption="1" %}
+![1](img_4659.jpg)
 
 and
 
-{% include image name="img_4660.jpg" caption="2" %}
+![2](img_4660.jpg)
 
 and
 
-{% include image name="img_4662.jpg" caption="3" %}
+![3](img_4662.jpg)
