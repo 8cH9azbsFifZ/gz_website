@@ -7,6 +7,10 @@ docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/loc
 ```
 docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/local/bundle" --volume="jekyll_gems:/usr/gem" --env JEKYLL_ENV=production jekyll/jekyll:3.8.6 bundle update
 ```
++ Testing
+```
+docker run --rm -it -p 4000:4000 --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/local/bundle" --volume="jekyll_gems:/usr/gem" --env JEKYLL_ENV=production jekyll/jekyll jekyll  serve
+```
 
 # Deploy
 ```
