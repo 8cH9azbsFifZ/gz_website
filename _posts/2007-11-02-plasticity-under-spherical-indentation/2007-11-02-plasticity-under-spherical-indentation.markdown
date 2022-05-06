@@ -10,6 +10,9 @@ wordpress_id: 9
 categories:
 - Physics
 - Simulations
+tags:
+- Physics
+- Simulations
 ---
 
 ## Introduction
@@ -34,15 +37,8 @@ We will consider an ideal spherical indenter which is moved down into a fcc subs
 
 
 
-<table >Predicted Stress Distribution [1]
-<tbody >
-<tr >
+![Predicted Stress Distribution (1)](MaximalShearStress.jpg)
 
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/MaximalShearStress.jpg)
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -53,7 +49,7 @@ As plasticity means that some particles will move and others not, an inhomogenou
 
 
 
-![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/EqMises.jpg)
+![](EqMises.jpg)
 
 
 
@@ -64,20 +60,7 @@ As plasticity means that some particles will move and others not, an inhomogenou
 It follows the symmetry of the crystalline structure.
 
 
-
-
-
-<table >Von Mises Stress Distribution (measured at the end of the elastic regime)
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/MisesStressDistribution.jpg)
-</td>
-</tr>
-</tbody>
-</table>
-
-
+![Von Mises Stress Distribution (measured at the end of the elastic regime)](MisesStressDistribution.jpg)
 
 
 
@@ -90,20 +73,7 @@ It follows the symmetry of the crystalline structure.
 As discussed above, plasticity will set in not at the surface but in the volume of the substrate, where the theoretical maximal shear stress is exceeded.
 
 
-
-<table >Onset of Plasticity
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/OnsetPlasticity.jpg)
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+![Onset of Plasticity](OnsetPlasticity.jpg)
 
 
 
@@ -111,33 +81,14 @@ As discussed above, plasticity will set in not at the surface but in the volume 
 After a primary defect cluster has been nucleated, partial dislocation loops propagate both into the volume and up to the surface. They can be observed as small cracks in the surface under the indenter. The inner of the partials has a hcp structure.
 
 
-
-
-
-<table >Propagating Partials
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/PropagatingPartials.jpg)
-</td>
-</tr>
-</tbody>
-</table>
+![Propagating Partials](PropagatingPartials.jpg)
 
 
 
 
 
+![Crack under the Indenter](CrackUnderIndenterHighlight.jpg)
 
-<table >Crack under the Indenter
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/CrackUnderIndenterHighlight.jpg)
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -153,21 +104,7 @@ After a primary defect cluster has been nucleated, partial dislocation loops pro
 
 Under the applied stress material transport will occur. This can be imagined similar to a carpet through which a fold is moving: the fold will propagate a piece of the carpet forwards. The same happens to the crystal.
 
-
-
-
-
-<table >Gliding of the Free Surface
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/GlideOnSurface.jpg)
-</td>
-</tr>
-</tbody>
-</table>
-
-
+![Gliding of the Free Surface](GlideOnSurface.jpg)
 
 
 
@@ -182,36 +119,9 @@ Under the applied stress material transport will occur. This can be imagined sim
 Energy is not only transferred into the elastic deformation but also into plasticity. If a specific energy is reached cross glide occurs; it can be seen when the moving partials change their direction. This process ends in the nucleation of a prismatic dislocation loop.
 
 
+![Cross Glide](CrossGlideHighlight.jpg)
 
-
-
-<table >Cross Glide
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/CrossGlideHighlight.jpg)
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-<table >Prismatic Dislocation Loop
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/PrismaticLoop.jpg)
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
+![Prismatic Dislocation Loop](PrismaticLoop.jpg)
 
 
 
@@ -220,19 +130,7 @@ Energy is not only transferred into the elastic deformation but also into plasti
 The Mises stress of this prismatic dislocation suggests that a prismatic loop transports encapsulated shear stress into the material.
 
 
-
-
-
-<table >Mises Stress of a Prismatic Dislocation Loop
-<tbody >
-<tr >
-
-<td >![](http://merapi.physik.uni-kl.de/~gerolf/Plasticity/PrismaticLoopStress.jpg)
-</td>
-</tr>
-</tbody>
-</table>
-
+![Mises Stress of a Prismatic Dislocation Loop](PrismaticLoopStress.jpg)
 
 
 
