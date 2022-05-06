@@ -16,6 +16,11 @@ Recently the [Raspberry Pi (Raspi)](http://www.raspberrypi.org/) has gained mu
 
 Immediately my 10mW have been received in 743km distance by G6HUI ([WSPR Spots](http://wsprnet.org/drupal/wsprnet/spots)) and within two weeks I was received in a distance of 7869km. Not too bad with about 10mW:
 
+|Timestamp	|Call	|MHz	|SNR	|Drift	|Grid	|Pwr	|Reporter	|RGrid	|km	|az|
+|-----------|-------|-------|-------|-------|-------|-------|-----------|-------|---|--|
+|2013-04-13 |15:30	|DG6FL	| 10.140199	 |-16	 |-1	 |JO40cb	| 0.01	| G6HUI	| IO81wl	| 743	| 286|
+|2013-04-22 |05:02	 |DG6FL	|10.140238	 |-21	| 1	 |JO40cb	 |0.01	 |W4AC	 |EL86	| 7869	| 289|
+
 ![7869km with 10mW](/images/posts/2013-04-13-raspi-as-wspr-transmitter/wspr_dg6fl_us.png)
 
 Information on how to do this yourself can be found in the [WsprryPi](https://github.com/8cH9azbsFifZ/WsprryPi) repository.
