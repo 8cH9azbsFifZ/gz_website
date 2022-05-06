@@ -1,7 +1,7 @@
 ---
 author: gerolfziegenhain
 comments: true
-date: 2016-09-13 19:34:27+00:00
+date: 2011-09-13 19:34:27+00:00
 layout: post
 slug: verified-all-band-trx-for-the-yaesu-ft-817-nd
 title: Verified All-Band TRX for the Yaesu FT 817 ND
