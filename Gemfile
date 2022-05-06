@@ -5,6 +5,6 @@ gem 'jekyll-scholar' , group: :jekyll_plugins
 gem 'jekyll-paginate' , group: :jekyll_plugins
 gem 'jekyll-sitemap' , group: :jekyll_plugins
 gem 'jekyll-figure' , group: :jekyll_plugins
-
+gem 'jekyll-postfiles' , group: :jekyll_plugins
 
 gem "webrick"
