@@ -9,9 +9,8 @@ categories: [Ham Radio]
 tags: [Ham Radio, Voacap]
 ---
 
-Voacap is a nice tool for simulating the propagation of hf waves: [http://www.voacap.com/areapredictions/4f7f7c19ef243/](http://www.voacap.com/areapredictions/4f7f7c19ef243/)
-.
+Voacap is a nice tool for simulating the propagation of hf waves: [http://www.voacap.com/areapredictions/4f7f7c19ef243/](http://www.voacap.com/areapredictions/4f7f7c19ef243/).
 
 Below a screenshot of the link coverage on 40m band visualized with google earth.
 
-{% include image name="analysis.png" caption="link coverage on 40m band visualized with google earth" %}
+![link coverage on 40m band visualized with google earth](analysis.png)
