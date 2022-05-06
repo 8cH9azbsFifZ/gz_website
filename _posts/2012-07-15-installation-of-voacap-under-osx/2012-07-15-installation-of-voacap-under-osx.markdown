@@ -11,6 +11,10 @@ categories:
 - Ham Radio
 - OSX
 - Voacap
+tags:
+- Ham Radio
+- OSX
+- Voacap
 ---
 
 
@@ -23,26 +27,7 @@ Voacap is a tool for "HF Propagation Prediction and Ionospheric Communications A
 
 
 
-
-
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >[![](http://www.voacap.com/voacap-hf-propagation-prediction-service-coverage-map.jpg)](http://www.voacap.com/voacap-hf-propagation-prediction-service-coverage-map.jpg)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >VOACAP Online
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
+![VOACAP Online](voacap-hf-propagation-prediction-service-coverage-map.jpg)
 
 
 

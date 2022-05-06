@@ -11,22 +11,14 @@ categories:
 - Ham Radio
 - Linux
 - Voacap
+tags:
+- Ham Radio
+- Linux
+- Voacap
 ---
 
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
+![Example Area Calculation](38741-test.png)
 
-<td style="text-align:center;" >[![](http://gerolfziegenhain.files.wordpress.com/2012/07/38741-test.png)](http://gerolfziegenhain.files.wordpress.com/2012/07/test.png)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Example Area Calculation
-</td>
-</tr>
-</tbody>
-</table>
 In this article I describe how to install pythonProp under Debian (squeeze) linux.
 
 
@@ -40,7 +32,7 @@ In this article I describe how to install pythonProp under Debian (squeeze) linu
 
 
 
-Follow the instructions given in this [article](http://gerolfziegenhain.blogspot.de/2012/07/installation-of-voacap-under-osx.html).
+Follow the instructions given in this [article](/2012/07/installation-of-voacap-under-osx.html).
 
 
 
