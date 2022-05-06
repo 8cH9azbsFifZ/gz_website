@@ -6,6 +6,7 @@ layout: post
 slug: verified-all-band-trx-for-the-yaesu-ft-817-nd
 title: Verified All-Band TRX for the Yaesu FT 817 ND
 categories: [Ham Radio, QRP]
+tags: [Ham Radio, QRP]
 ---
 
 The information available on the web may be misleading: the jumper enumeration is ambiguous and little information on the extended range exists.

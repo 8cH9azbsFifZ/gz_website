@@ -6,6 +6,8 @@ layout: post
 slug: raspi-as-wspr-transmitter
 title: Raspi As WSPR Transmitter
 categories: [Ham Radio, QRP, Raspi]
+tags: [Ham Radio, QRP]
+
 ---
 
 Recently the [Raspberry Pi (Raspi)](http://www.raspberrypi.org/) has gained much interest in the Ham Radio community. One interesting things is: the I/O pins provide access to a clock signal (GPCLK0) and it is possible to modulate this clock signal via software. This has motivated Guido Ten Dolle (PE1NZZ) to implement a [WSPR](http://wsprnet.org/drupal/) transmitter and to publish the sources under GPL. Within the last days I have made some minor modifications to the [WsprryPi](https://github.com/8cH9azbsFifZ/WsprryPi) sources, built a [30m QRP filter](http://www.gqrp.com/harmonic_filters.pdf) using the ugly method and connected everything to my [doublet antenna](http://www.norcalqrp.org/files/NorCalDoubletAntenna.pdf).
