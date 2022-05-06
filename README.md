@@ -1,11 +1,11 @@
 # Build
 + Rebuild
 ```
-docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/local/bundle" --volume="jekyll_gems:/usr/gem" --env JEKYLL_ENV=production jekyll/jekyll:3.8.5 jekyll build
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/local/bundle" --volume="jekyll_gems:/usr/gem" --env JEKYLL_ENV=production jekyll/jekyll:3.8.6 jekyll build
 ```
 + Update
 ```
-docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/local/bundle" --volume="jekyll_gems:/usr/gem" --env JEKYLL_ENV=production jekyll/jekyll:3.8.5 bundle update
+docker run --rm -it --volume="$PWD:/srv/jekyll" --volume="jekyll_bundle:/usr/local/bundle" --volume="jekyll_gems:/usr/gem" --env JEKYLL_ENV=production jekyll/jekyll:3.8.6 bundle update
 ```
 
 # Deploy
@@ -27,3 +27,4 @@ git checkout master
 - profile.jpg
 - cover.jpg
 - font css & ttf path
+- GH actions? https://martinopilia.com/posts/2020/02/22/migration.html
