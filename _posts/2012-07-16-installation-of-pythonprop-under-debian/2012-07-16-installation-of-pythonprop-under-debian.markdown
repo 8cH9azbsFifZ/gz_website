@@ -32,7 +32,7 @@ In this article I describe how to install pythonProp under Debian (squeeze) linu
 
 
 
-Follow the instructions given in this [article](/2012/07/installation-of-voacap-under-osx.html).
+Follow the instructions given in this [article](/2012-07-15-installation-of-voacap-under-osx.html).
 
 
 
