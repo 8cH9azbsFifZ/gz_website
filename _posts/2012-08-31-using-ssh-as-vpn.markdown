@@ -10,6 +10,9 @@ wordpress_id: 53
 categories:
 - Linux
 - OSX
+tags:
+- Linux
+- OSX
 ---
 
 One of the not so commonly known features of SSH is: you may use it for a poor man's VPN.
