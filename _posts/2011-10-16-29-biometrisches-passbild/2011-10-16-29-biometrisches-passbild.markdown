@@ -11,6 +11,9 @@ wordpress_id: 29
 categories:
 - Linux
 - OSX
+tags:
+- Linux
+- OSX
 ---
 
 Zunächst muß das Paßphoto den biometrischen Richtlinien (1) entsprechen. Diese können mittels der beigefügten Schablone und GIMP leicht erfüllt werden. Dann kann das Paßphoto in im Supermarkt gängige Sofortdruckformate (9x13, 10x15, 11x17, 13x18, 20x30) umgewandelt werden.  
@@ -56,7 +59,7 @@ $cmd = $cmd." center -composite ".$img;
 (1) Biometrische Richtlinien für Paßphotos:[http://www.bundesdruckerei.de/de/service/service_buerger/buerger_persdok/persdok_epassMstr.html](http://www.bundesdruckerei.de/de/service/service_buerger/buerger_persdok/persdok_epassMstr.html)
 
 
-[![](http://gerolfziegenhain.files.wordpress.com/2011/10/97e92-vorlage.png)](http://gerolfziegenhain.files.wordpress.com/2011/10/vorlage.png)
+![](vorlage.png)
 
 
 

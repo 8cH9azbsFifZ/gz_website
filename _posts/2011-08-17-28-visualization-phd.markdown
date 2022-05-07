@@ -10,6 +10,9 @@ wordpress_id: 28
 categories:
 - Linux
 - Physics
+tags:
+- Linux
+- Physics
 ---
 
 Using codeswarm I have visualized the progress on my PhD thesis :)
