@@ -25,7 +25,7 @@ A tool for preparation of the ham radio license examination. This tool uses the
 
 [http://hamexam.garage.maemo.org](http://hamexam.garage.maemo.org/)
 [http://sourceforge.net/projects/hamexam](http://sourceforge.net/projects/hamexam)
-git://repo.or.cz/HamExam.git
+https://github.com/8cH9azbsFifZ/HamExam
 
 
 
