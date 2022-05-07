@@ -10,6 +10,9 @@ wordpress_id: 62
 categories:
 - Apple
 - Time Capsule
+tags:
+- Apple
+- Time Capsule
 ---
 
 In the first generation of Time Capsules there was a quality problem with the capacitors in the switching power supply: a lot of them broke due to [heat problems](http://timecapsuledead.org/) after about 17 months There is an excellent [instruction](http://www.appuser.de/?p=392) on how to repair the device. Nevertheless the information which capacitors to use is missing. In this post I present a short instruction including more detailled information on the capacitors.
