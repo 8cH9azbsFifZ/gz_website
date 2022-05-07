@@ -10,9 +10,12 @@ wordpress_id: 20
 categories:
 - Linux
 - Teaching Physics
+tags:
+- Linux
+- Teaching Physics
 ---
 
-As this is scientific research software it is under heavy development and probably unuseable for others. Drop me a mail if you are interested in this code.
+As this is scientific research software it was under heavy development and probably unuseable for others. Drop me a mail if you are interested in this code.
 
 
 
@@ -35,7 +38,7 @@ If you like to use my _really_ experimental stuff, drop me a mail.
 
 	
   * **lammps-vim // Vim syntax highlighting for LAMMPS scripts** Included in the main branch.
-_git://repo.or.cz/lammps-vim.git_
+_https://github.com/8cH9azbsFifZ/lammps-vim_
 
 	
   * **Local temperature/pressure detector** On demand. Drop me a mail.
@@ -45,11 +48,11 @@ _git://repo.or.cz/lammps-vim.git_
 
 	
   * **ClusterDetector // Cluster Detector**Detection of particle clusters. Written in C and including a Python interface.
-_git://repo.or.cz/ClusterDetector.git_
+_https://github.com/8cH9azbsFifZ/ClusterDetector_
 
 	
   * **lm-algorithm // Levenberg-Marquardt-Algorithm**PY/HNC & OZ Equation Solver in Two Dimensions. The algorithm is described in this [report](https://docs.google.com/open?id=0B6kO4SX1CnShUGFObU8wUDl5Q3M).
-[@Sourceforge](http://sourceforge.net/projects/lm-algorithm/)or _git://repo.or.cz/lm.git_
+_https://github.com/8cH9azbsFifZ/lm_
 
 	
   * **OpenGL / Povray MD Visualizer with gamepad support**
