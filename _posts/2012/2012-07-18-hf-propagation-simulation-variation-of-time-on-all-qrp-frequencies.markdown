@@ -10,6 +10,9 @@ wordpress_id: 48
 categories:
 - Ham Radio
 - Voacap
+tags:
+- Ham Radio
+- Voacap
 ---
 
 In this post I show some video results of my Voacap simulations for HF propagation: the time has been varied (0-23h).

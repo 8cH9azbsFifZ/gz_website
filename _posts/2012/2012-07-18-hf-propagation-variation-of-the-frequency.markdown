@@ -10,6 +10,9 @@ wordpress_id: 47
 categories:
 - Ham Radio
 - Voacap
+tags:
+- Ham Radio
+- Voacap
 ---
 
 In the following post I show some visual results of my Voacap simulations. The visualization has been done using some python and shell scripting.
