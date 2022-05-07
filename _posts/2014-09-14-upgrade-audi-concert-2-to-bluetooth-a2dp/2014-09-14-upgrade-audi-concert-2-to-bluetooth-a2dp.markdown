@@ -8,7 +8,13 @@ slug: upgrade-audi-concert-2-to-bluetooth-a2dp
 title: Upgrade Audi Concert 2 to Bluetooth A2DP
 wordpress_id: 503
 categories:
-- Nicht kategorisiert
+- Hardware
+- Car
+- Radio
+tags:
+- Hardware
+- Car
+- Radio
 ---
 
 Cars manufactured about 10 years ago often do not provide bluetooth audio support. Here I describe a proven setup with bluetooth ([A2DP and HFP](http://en.wikipedia.org/wiki/List_of_Bluetooth_profiles)) for an Audi with the built-in radio "Concert 2" and the built-in hands-free system. I use two different audio devices for music (A2DP) and telephone (HFP). For recent firmware versions (iOS 7.x) of the iPhone it is possible to use multiple bluetooth audio devices.
