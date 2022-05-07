@@ -9,6 +9,8 @@ title: von Mises Stress
 wordpress_id: 25
 categories:
 - Physics
+tags:
+- Physics
 ---
 
 The same scene using a volumeview to show the von Mises stress from different angles.

@@ -9,6 +9,11 @@ title: Biophysics VI Lecture
 wordpress_id: 26
 categories:
 - Teaching Physics
+- Outdated
+
+tags:
+- Teaching Physics
+- Outdated
 ---
 
 Link to the Biophysics VI lecture in WS2010/2011 [http://www.kis.uni-kl.de/](http://www.kis.uni-kl.de/).
