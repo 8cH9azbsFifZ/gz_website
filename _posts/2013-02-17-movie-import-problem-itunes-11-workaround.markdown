@@ -12,6 +12,11 @@ categories:
 - iTunes
 - OSX
 - Workaround
+tags:
+- Apple
+- iTunes
+- OSX
+- Workaround
 ---
 
 In iTunes 11.0.11 (12) 64-Bit there is a bug, which prevents movie import. Once a movie is imported (Drag & Drop or manually) it does not show up in iTunes. Nevertheless the file is copied to the iTunes directory Home Videos and is inserted into the library file iTunes Library.xml. If you wait a while the movies will show up (at least some in my case...).
