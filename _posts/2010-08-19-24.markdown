@@ -9,6 +9,8 @@ title: Hamlib Spacenavigator
 wordpress_id: 24
 categories:
 - Ham Radio
+tags:
+- Ham Radio
 ---
 
 A software to tune your rig using a 3d mouse. This script allows to use the space navigator 3d mouse to tune your rig using the hamlib interface. 
