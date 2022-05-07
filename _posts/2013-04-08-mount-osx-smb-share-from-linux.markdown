@@ -9,6 +9,8 @@ title: Mount OSX SMB Share From Linux
 wordpress_id: 82
 categories:
 - OSX
+tags:
+- OSX
 ---
 
 A small reminder for all the options:
