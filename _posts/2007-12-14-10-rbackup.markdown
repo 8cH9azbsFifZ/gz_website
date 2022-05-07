@@ -9,6 +9,10 @@ title: rbackup - remote incremental backups using rsync
 wordpress_id: 10
 categories:
 - Linux
+- Outdated
+tags:
+- Linux
+- Outdated
 ---
 
 Using rsync/ssh this script will create incremental backups of your ~. It can easily be adjusted via crontab entries.

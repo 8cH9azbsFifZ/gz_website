@@ -9,6 +9,10 @@ title: Nokia Maemo Experiments
 wordpress_id: 7
 categories:
 - Linux
+- Outdated
+tags:
+- Linux
+- Outdated
 ---
 
 Some experiments I have done with the Nokia Internet Tablets.
