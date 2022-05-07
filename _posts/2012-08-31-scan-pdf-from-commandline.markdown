@@ -10,6 +10,9 @@ wordpress_id: 55
 categories:
 - Linux
 - OSX
+tags:
+- Linux
+- OSX
 ---
 
 In the following I show a small piece of code to scan PDF files from commandline:
