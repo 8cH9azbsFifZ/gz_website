@@ -11,6 +11,10 @@ categories:
 - Apple
 - OSX
 - VNC
+tags:
+- Apple
+- OSX
+- VNC
 ---
 
 The builtin VNC server can be started using commandline (i.e. with ssh). As root do:
