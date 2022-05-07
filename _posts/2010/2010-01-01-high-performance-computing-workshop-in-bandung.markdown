@@ -10,6 +10,9 @@ wordpress_id: 19
 categories:
 - Physics
 - Teaching Physics
+tags:
+- Physics
+- Teaching Physics
 ---
 
 At the end of the year 2009, the Computational Material Science Group, TU Kaiserslautern, organized a workshop on High-Performance Computing (HPC). The workshop was held from 7th to 9th December, 2009, at the Universitas Padjadjaran, Bandung Indonesia. Two group members, Dr. Yudi Rosandi and Dr. Gerolf Ziegenhain, were the main speakers of the workshop. The local organizer was Dr. Irwan Ary Dharmawan, from Dept. Physics, Universitas Padjadjaran.
@@ -128,85 +131,6 @@ From the final evaluation taken at the end of the event, we received many reques
 
 ## 
 
-
-
-
-## Impressions
-
-
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >![](http://www.physik.uni-kl.de/fileadmin/urbassek/events/hpc09/dcq9cpdb_12c3mj3sc3_b.jpg)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Participants
-</td>
-</tr>
-</tbody>
-</table>
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >![](http://www.physik.uni-kl.de/fileadmin/urbassek/events/hpc09/dcq9cpdb_15hsw32mqd_b.jpg)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Coffee Break Discussions
-</td>
-</tr>
-</tbody>
-</table>
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >![](http://www.physik.uni-kl.de/fileadmin/urbassek/events/hpc09/dcq9cpdb_16hg76xkfb_b.jpg)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Coffee Break Discussions
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >![](http://www.physik.uni-kl.de/fileadmin/urbassek/events/hpc09/dcq9cpdb_13f9wbmncw_b.jpg)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Lectures
-</td>
-</tr>
-</tbody>
-</table>
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >![](http://www.physik.uni-kl.de/fileadmin/urbassek/events/hpc09/dcq9cpdb_14f8xnbqc3_b.jpg)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Lectures
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
