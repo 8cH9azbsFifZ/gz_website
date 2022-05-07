@@ -9,6 +9,8 @@ title: Katasterkarten vom Land Hessen online finden
 wordpress_id: 72
 categories:
 - Karten
+tags:
+- Karten
 ---
 
 Die Katasterkarten vom Land hessen lassen sich mittlerweile auch online finden. Sie sind jedoch ein wenig versteckt:

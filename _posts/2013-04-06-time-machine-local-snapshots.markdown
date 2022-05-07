@@ -11,6 +11,10 @@ categories:
 - Apple
 - OSX
 - Time Machine
+tags:
+- Apple
+- OSX
+- Time Machine
 ---
 
 Time machine can keep _local snapshots_. While this feature is useful if you travel and don't have access to your Time Capsule, the local snapshots can consume a lot of the local disk space in /.MobileBackups. There is a complex [Removal Algorithm](http://support.apple.com/kb/PH11394) for old local snapshots based on the remaining free disk space.
