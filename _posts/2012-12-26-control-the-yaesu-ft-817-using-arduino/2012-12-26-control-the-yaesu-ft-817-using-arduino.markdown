@@ -10,23 +10,16 @@ wordpress_id: 70
 categories:
 - Arduino
 - Ham Radio
+tags:
+- Arduino
+- Ham Radio
 ---
 
 Recently the Arduino microcontroller has become famous for controlling rigs. When it comes to the Yaesu FT817 there exist controllers for [satellite operation](http://code.google.com/p/qrptracker/) (VE9RQP), for loop antenna tuners ([WW3WW](http://www.alain.it/2012/02/10/ft-817-automatic-loop/)) and for transverters ([IZ0MJE](http://tarapippo.blogspot.it/2011/06/interfaccia-ft817-transverter-con_18.html)). During the development of the [xmlbandplan.org](http://xmlbandplan.org/) project I was in need of a hardware to play with some features. The idea of an Arduino controller library for the FT817 was born. Based upon the sources mentioned above and the [Hamlib](http://sourceforge.net/apps/mediawiki/hamlib/index.php?title=Main_Page) implementation for this rig I have created a library for controlling the FT817 from an Arduino (the sources are available on [github](http://8ch9azbsfifz.github.com/arduino_ft817/)). More details on the usage and installation of this library can be found in the source tree.
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
 
-<td style="text-align:center;" >[![](http://8ch9azbsfifz.github.com/arduino_ft817/hardware/prototype.png)](http://8ch9azbsfifz.github.com/arduino_ft817/hardware/prototype.png)
-</td>
-</tr>
-<tr >
 
-<td style="text-align:center;" class="tr-caption" >Arduino Controller for FT817 with GPS
-</td>
-</tr>
-</tbody>
-</table>
+![Arduino Controller for FT817 with GPS](prototype.png)
+
 
 
 

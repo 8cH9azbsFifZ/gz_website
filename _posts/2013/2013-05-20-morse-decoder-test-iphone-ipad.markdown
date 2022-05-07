@@ -10,6 +10,9 @@ wordpress_id: 89
 categories:
 - Ham Radio
 - Morse Code
+tags:
+- Ham Radio
+- Morse Code
 ---
 
 There are three morse decoders in the App Store. Same test case for all of them: "CQ CQ CQ DE DG
