@@ -9,6 +9,8 @@ title: Lightify Lampen mit Hue verwenden
 wordpress_id: 545
 categories:
 - Hardware
+tags:
+- Hardware
 ---
 
 Für den Preis einer Hue Lampe sind zwei Lightify Lampen zu haben, doch das Hue System ist verbreiteter... Wie lässt sich eine Lightify Lampe in ein Hue System einbinden?

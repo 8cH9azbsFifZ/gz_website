@@ -11,6 +11,7 @@ categories:
 - Karten
 tags:
 - Karten
+- Outdated
 ---
 
 Die Katasterkarten vom Land hessen lassen sich mittlerweile auch online finden. Sie sind jedoch ein wenig versteckt:

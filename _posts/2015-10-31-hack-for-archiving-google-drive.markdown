@@ -8,7 +8,9 @@ slug: hack-for-archiving-google-drive
 title: Hack for Archiving Google Drive
 wordpress_id: 531
 categories:
-- Nicht kategorisiert
+- google
+tags:
+- google
 ---
 
 Problem: Archiving of Google Drive documents does not work with the google drive app. Why? Google Drive App stores only links to the cloud (i.e. .gdoc, .gsheet). 
