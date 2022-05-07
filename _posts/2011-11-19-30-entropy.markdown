@@ -9,6 +9,8 @@ title: Calculating the Shannon Entropy with Perl
 wordpress_id: 30
 categories:
 - Linux
+tags:
+- Linux
 ---
 
 Just a small script ;)

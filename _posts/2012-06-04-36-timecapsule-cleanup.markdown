@@ -13,6 +13,12 @@ categories:
 - Time Capsule
 - Time Machine
 - Workaround
+tags:
+- Apple
+- OSX
+- Time Capsule
+- Time Machine
+- Workaround
 ---
 
 Consider you want to remove a bunch of old updates (i.e. of an old Mac) from your Time Capsule (TC). You could erase the whole disk, but usually this is not what you intend to do. Another alternative is to remove the plain sparse bundle containing the old backups. Removing sparse bundles - in particular for >1TB backups - from a TC can be a pain due to the time consumption. This is a result of the approach to split the backup in ~8MB sized directories. 

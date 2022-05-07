@@ -9,6 +9,8 @@ title: Funny Fork Bomb
 wordpress_id: 31
 categories:
 - Linux
+tags:
+- Linux
 ---
 
 Try this in your console, if you dare :D

@@ -10,6 +10,9 @@ wordpress_id: 33
 categories:
 - Physics
 - Xmas Simulations
+tags:
+- Physics
+- Xmas Simulations
 ---
 
 Here is a bunch of my old Xmas simulations.
