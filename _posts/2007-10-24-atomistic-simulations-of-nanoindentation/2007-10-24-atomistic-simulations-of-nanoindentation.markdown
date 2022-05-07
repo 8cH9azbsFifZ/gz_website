@@ -10,6 +10,9 @@ wordpress_id: 8
 categories:
 - Physics
 - Simulations
+tags:
+- Physics
+- Simulations
 ---
 
 ## Introduction to Nanoindentation
@@ -19,72 +22,35 @@ Indentation experiments in which a hard tip is indented into a substrate allow r
 
 
 
-<table cellpadding="0" style="width:100%px;" align="CENTER" >
-<tbody >
-<tr valign="MIDDLE" >
+![$\displaystyle E_\mathrm{r}:=E/(1-\nu^2)$](img1.png)
 
-<td align="CENTER" nowrap="nowrap" >![$\displaystyle E_\mathrm{r}:=E/(1-\nu^2)$](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/img1.png)
-</td>
-
-<td width="10" align="RIGHT" nowrap="nowrap" class="eqno" >
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
 Oliver and Pharr (1992); Hertz (1882); Chaudhri (2000) one can determine the contact hardness
 
 
+![$\displaystyle H:=F_\mathrm{ind}/A_\mathrm{contact}$](img2.png)
 
-<table cellpadding="0" style="width:100%px;" align="CENTER" >
-<tbody >
-<tr valign="MIDDLE" >
-
-<td align="CENTER" nowrap="nowrap" >![$\displaystyle H:=F_\mathrm{ind}/A_\mathrm{contact}$](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/img2.png)
-</td>
-
-<td width="10" align="RIGHT" nowrap="nowrap" class="eqno" >
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
 Fischer-Cripps (2004) of materials.
 
 
-[](http://www.blogger.com/blogger.g?blogID=1520808225736531598)
-<table >**Figure 1:** Force-Depth Curve - (100) Indentation into Copper
-<tbody >
-<tr >
-
-<td >![Image ForceDepth](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/ForceDepth.png)
-</td>
-</tr>
-</tbody>
-</table>
+![**Figure 1:** Force-Depth Curve - (100) Indentation into Copper](ForceDepth.png)
 
 
 
 
 
-[](http://www.blogger.com/blogger.g?blogID=1520808225736531598)
-<table >**Figure 2:** Contact Hardness - (100) Indentation into Copper
-<tbody >
-<tr >
 
-<td >![Image ContactHardness](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/ContactHardness.png)
-</td>
-</tr>
-</tbody>
-</table>
+![**Figure 2:** Contact Hardness - (100) Indentation into Copper](ContactHardness.png)
 
 
 
-For small length scales Gane and Bowden (1968) the material properties differ from the macroscopic expectations. Particularly the force-depth curve has characteristic dips (the so-called pop-ins) at the elastic-plastic transition Göken and Kempf (2001). This and the overestimated theoretical shear stress![$ \tau_\mathrm{th}\gg\tau_\mathrm{exp}$](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/img3.png) Frenkel (1926) suggest that atomistic effects play an important role for the macroscopic length scale material behavior; namely these atomistic effects are dislocations Phillips (2001); Hull and Bacon (1992). The indented surface itself is also of interest: pile-up effects and regeneration are only two important topics.
+
+For small length scales Gane and Bowden (1968) the material properties differ from the macroscopic expectations. Particularly the force-depth curve has characteristic dips (the so-called pop-ins) at the elastic-plastic transition Göken and Kempf (2001). This and the overestimated theoretical shear stress![$ \tau_\mathrm{th}\gg\tau_\mathrm{exp}$](img3.png) Frenkel (1926) suggest that atomistic effects play an important role for the macroscopic length scale material behavior; namely these atomistic effects are dislocations Phillips (2001); Hull and Bacon (1992). The indented surface itself is also of interest: pile-up effects and regeneration are only two important topics.
 Therefore an understanding of the atomistic plasticity is of great importance for material modeling on larger length scales and for understanding the material properties (hardness, elasticity) at all. Apart from that this the current length scale of electronic devices has already reached the nm-scale and atomistic effects itself are becoming important for industrial production.
 
 
@@ -94,49 +60,17 @@ Therefore an understanding of the atomistic plasticity is of great importance fo
 The big advantage of simulations in contrast to the experiment is a total control of the system. Therefore simulations are predicted to research the atomistic effects. By using molecular dynamics (MD) Frenkel and Smit (1996); Plimpton and Ziegenhain (2006); Allen and Tildesley (2002) the onset of plasticity has been investigated in various systems Smith et al. (2003); Mulliah et al. (2003); Lilleodden et al. (2003); Christopher et al. (2001). The elastic properties are treated in detail in Lilleodden et al. (2003) and preliminary simulations for anisotropical effects have been done Tsuru and Shibutani (2007). Alternatively one could choose finite-element simulations for the modeling Durst et al. (2002,2004); these operate inherently on larger scales and are therefore not reasonable for atomistic length scales. Nevertheless it is promising to exploit the concurrent length scales of the physical system by coupling both simulation methods McGee et al. (2006). This strategy will not be pursued in the present project.In our simulations we model the indenter as an external constraint using the potential proposed in Kelchner et al. (1998):
 
 
-
-<table cellpadding="0" style="width:100%px;" align="CENTER" >
-<tbody >
-<tr valign="MIDDLE" >
-
-<td align="CENTER" nowrap="nowrap" >![$\displaystyle V_\mathrm{ind}:=k\Theta(R_\mathrm{ind}-r)(R_\mathrm{ind}-r)^3$](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/img4.png)
-</td>
-
-<td width="10" align="RIGHT" nowrap="nowrap" class="eqno" >[   ](http://www.blogger.com/blogger.g?blogID=1520808225736531598)
-</td>
-</tr>
-</tbody>
-</table>
+![$\displaystyle V_\mathrm{ind}:=k\Theta(R_\mathrm{ind}-r)(R_\mathrm{ind}-r)^3$](img4.png)
 
 
 
 
-
-[](http://www.blogger.com/blogger.g?blogID=1520808225736531598)[](http://www.blogger.com/blogger.g?blogID=1520808225736531598)
-<table >**Figure 3:** Lattice Defects under (100)-Indentation into Copper
-<tbody >
-<tr >
-
-<td >![\includegraphics[width=16cm]{Indentation.eps}](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/img5.png)
-</td>
-</tr>
-</tbody>
-</table>
+![**Figure 3:** Lattice Defects under (100)-Indentation into Copper](img5.png)
 
 
 
+![**Figure 4:** Lattice Defects and Mises Stress under (100)-Indentation into Copper](img6.png)
 
-
-[](http://www.blogger.com/blogger.g?blogID=1520808225736531598)[](http://www.blogger.com/blogger.g?blogID=1520808225736531598)
-<table >**Figure 4:** Lattice Defects and Mises Stress under (100)-Indentation into Copper
-<tbody >
-<tr >
-
-<td >![\includegraphics[width=16cm]{IndentationWithStress.eps}](http://merapi.physik.uni-kl.de/~gerolf/Nanoindentation/img6.png)
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
