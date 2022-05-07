@@ -10,6 +10,9 @@ wordpress_id: 64
 categories:
 - GPX
 - Linux
+tags:
+- GPX
+- Linux
 ---
 
 
@@ -27,21 +30,8 @@ In this post I show a small example on how one can easily evaluate GPX track fil
 The calculation of distances between two points in WGS 84 coordinates is done using the approach given by [Vincenty](http://en.wikipedia.org/wiki/Vincenty's_formulae). There are methods with an accuracy of up to 10nm ([geographiclib](http://geographiclib.sourceforge.net/), interesting [paper](http://arxiv.org/abs/1002.1417) on this topic).
 
 
+![Velocity Distribution](dist_velo.png)
 
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >[![](http://gerolfziegenhain.files.wordpress.com/2012/09/c90bf-dist_velo.png)](http://gerolfziegenhain.files.wordpress.com/2012/09/dist_velo.png)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Velocity Distribution
-</td>
-</tr>
-</tbody>
-</table>
 
 
 
