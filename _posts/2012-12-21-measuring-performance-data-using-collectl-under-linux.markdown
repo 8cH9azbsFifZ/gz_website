@@ -10,6 +10,9 @@ wordpress_id: 66
 categories:
 - Linux
 - Performance
+tags:
+- Linux
+- Performance
 ---
 
 
