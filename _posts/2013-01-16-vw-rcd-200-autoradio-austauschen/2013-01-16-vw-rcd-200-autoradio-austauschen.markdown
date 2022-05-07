@@ -9,6 +9,12 @@ title: VW RCD 200 Autoradio austauschen
 wordpress_id: 74
 categories:
 - Hardware
+- Car
+- Radio
+tags:
+- Hardware
+- Car
+- Radio
 ---
 
 In diesem Artikel beschreibe ich kurz was zum Austausch des standardmäßig eingebauten Autoradios - hier RCD 200 - in einem VW Polo zu tun ist. Man benötigt nicht mehr als einen einfachen Stecker-Adapter für knapp 5€. Den Schluß, ob die üblichen Werkstätten (s.u.) aus finanziellen Gründen oder schlichter Inkompetenz unnötige Adapter für etwa 150€ anbieten überlasse ich dem Leser.
@@ -64,35 +70,11 @@ Eine einfache Frage an dieser Stelle: Wie soll denn das eingebaute Radio von VW
 
 Dabei ist die Sache viel einfacher: Am [Quadlock-Stecker](http://en.wikipedia.org/wiki/Connectors_for_car_audio#Quadlock) ist das Zündungsplus bereits vorhanden (siehe Bilder: rot-schwarzes Kabel). Daher braucht es einfach einen Adapter der ein Kabel mit dem Pin für den Stecker hat.
 
+![Zündungsplus am VW Quadlock Stecker](bildschirmfoto2013-01-12um10-38-07.png)
 
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
 
-<td style="text-align:center;" >[![](http://gerolfziegenhain.files.wordpress.com/2013/01/bildschirmfoto2013-01-12um10-38-07.png?w=280)](http://gerolfziegenhain.files.wordpress.com/2013/01/bildschirmfoto2013-01-12um10-38-07.png)
-</td>
-</tr>
-<tr >
+![Pin Belegung Zündungsplus am VW Quadlock Stecker](bildschirmfoto2013-01-12um10-38-23.png)
 
-<td style="text-align:center;" class="tr-caption" >Zündungsplus am VW Quadlock Stecker
-</td>
-</tr>
-</tbody>
-</table>
-<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" >
-<tbody >
-<tr >
-
-<td style="text-align:center;" >[![](http://gerolfziegenhain.files.wordpress.com/2013/01/bildschirmfoto2013-01-12um10-38-23.png?w=300)](http://gerolfziegenhain.files.wordpress.com/2013/01/bildschirmfoto2013-01-12um10-38-23.png)
-</td>
-</tr>
-<tr >
-
-<td style="text-align:center;" class="tr-caption" >Pin Belegung Zündungsplus am VW Quadlock Stecker
-</td>
-</tr>
-</tbody>
-</table>
 
 
 ## Wie wird das Radio also angeschlossen?
