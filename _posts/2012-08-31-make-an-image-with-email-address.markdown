@@ -10,6 +10,9 @@ wordpress_id: 57
 categories:
 - Linux
 - OSX
+tags:
+- Linux
+- OSX
 ---
 
 This is a small piece of code to create an image from your Email address:
