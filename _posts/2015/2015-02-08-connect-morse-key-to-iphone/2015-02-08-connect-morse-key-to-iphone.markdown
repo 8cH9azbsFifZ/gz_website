@@ -11,11 +11,15 @@ categories:
 - Ham Radio
 - iOS
 - Morse Code
+tags:
+- Ham Radio
+- iOS
+- Morse Code
 ---
 
 How to connect morse key to an iPhone? Using the buttons on the standard headphones does not work, as the apple interface does not provide low-level access to low-level events like button-down. The idea (R1, R2) will be (1) put a signal to one stereo channel (2) receive the same signal on the input channel (small resistor will simulate mic) (3) detect tone level changes for input channel -> real time-morse (4) put side-tone & co to remaining stereo channel. 
 
-[![Pasted Graphic](https://gerolfziegenhain.files.wordpress.com/2015/02/pasted-graphic.png?w=170)](https://gerolfziegenhain.files.wordpress.com/2015/02/pasted-graphic.png)
+![Pasted Graphic](pasted-graphic.png)
 
 
 
@@ -37,7 +41,7 @@ How to connect morse key to an iPhone? Using the buttons on the standard headpho
  
 
 I got a prototype running with irmc-ios (R4) and the same physical interface also works with iMorsix (R3).
-[![IMG_0188](https://gerolfziegenhain.files.wordpress.com/2015/02/img_0188.jpg?w=300)](https://gerolfziegenhain.files.wordpress.com/2015/02/img_0188.jpg)
+![IMG_0188](img_0188.jpg)
 
 (R1) [Hijacking Power from [...] Audio Interface](https://web.eecs.umich.edu/~prabal/pubs/papers/kuo10hijack.pdf)
 (R2) [Sources: hijack-main](https://code.google.com/p/hijack-main/)

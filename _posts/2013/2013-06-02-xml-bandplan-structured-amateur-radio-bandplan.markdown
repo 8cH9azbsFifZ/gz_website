@@ -9,6 +9,8 @@ title: XML Bandplan - Structured Amateur Radio Bandplan
 wordpress_id: 95
 categories:
 - Ham Radio
+tags:
+- Ham Radio
 ---
 
 As of today bandplan information for amateur radio is accessible in form of [various spreadsheets](http://www.darc.de/referate/vus/bandplaene/), PDFs or even in [Wikipedia](http://en.wikipedia.org/wiki/Amateur_radio_frequency_allocations). Of course this differs from country to country. Depending on the source, the bandplan may be outdated and it can be challenging to find a valid source for up-to-date information. While it is possible to find bandplan authoritative information on bandplan usage for the [three different IARU regions](http://en.wikipedia.org/wiki/International_Amateur_Radio_Union), the best-practices for the member countries are even more difficult to find. In short: the information is difficult to find, exists in various formats and is not at hand when you really need it.
