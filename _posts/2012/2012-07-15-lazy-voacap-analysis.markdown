@@ -10,6 +10,9 @@ wordpress_id: 43
 categories:
 - Ham Radio
 - Voacap
+tags:
+- Ham Radio
+- Voacap
 ---
 
 If you want to save your time by not installing voacap on your computer, you still can use the online tool for coverage analysis ([voacap.com](http://www.voacap.com/coverage.html)). You can even automate this using a small shell script to build a PDF file with your HF propagation simulation.
