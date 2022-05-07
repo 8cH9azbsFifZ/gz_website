@@ -11,10 +11,13 @@ categories:
 - Apple
 - OSX
 - Workaround
+- Outdated
+
 tags:
 - Apple
 - OSX
 - Workaround
+- Outdated
 ---
 
 Some of the older AirPort devices will not work with current versions of the AirPort Utility and old versions cannot be installed on OSX Mountain Lion (yet).  The old version can be installed manually in parallel to the new version:

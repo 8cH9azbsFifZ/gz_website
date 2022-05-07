@@ -11,6 +11,10 @@ categories:
 - Ham Radio
 - Linux
 - SDR
+tags:
+- Ham Radio
+- Linux
+- SDR
 ---
 
 ## SDR Software under Linux
