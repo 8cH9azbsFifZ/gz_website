@@ -10,6 +10,9 @@ wordpress_id: 78
 categories:
 - Google Latitude
 - GPX
+tags:
+- Google Latitude
+- GPX
 ---
 
 It is possible to download the google latitude history of a complete year in one step:
