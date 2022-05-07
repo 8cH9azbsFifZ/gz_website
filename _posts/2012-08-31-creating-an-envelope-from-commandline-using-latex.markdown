@@ -10,6 +10,9 @@ wordpress_id: 58
 categories:
 - Linux
 - OSX
+tags:
+- Linux
+- OSX
 ---
 
 This small piece of code will create an envelope from commandline...
