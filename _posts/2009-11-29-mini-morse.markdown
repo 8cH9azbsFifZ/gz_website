@@ -9,6 +9,8 @@ title: Mini Morse
 wordpress_id: 17
 categories:
 - Ham Radio
+tags:
+- Ham Radio
 ---
 
 ## Mini-Morse - Koch / N0HFF Morse Trainer
