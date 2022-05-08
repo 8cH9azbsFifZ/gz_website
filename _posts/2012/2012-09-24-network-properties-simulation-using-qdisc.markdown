@@ -10,8 +10,7 @@ wordpress_id: 61
 categories:
 - Linux
 - Network
-tags
-:
+tags:
 - Linux
 - Network
 ---
