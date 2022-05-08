@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/8cH9azbsFifZ/gz_website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/8cH9azbsFifZ/gz_website/actions/workflows/pages/pages-build-deployment)
+
 # Build
 + Rebuild
 ```
