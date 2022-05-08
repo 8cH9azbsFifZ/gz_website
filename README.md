@@ -31,3 +31,4 @@ git checkout master
 - cover.jpg
 - font css & ttf path
 - GH actions? https://martinopilia.com/posts/2020/02/22/migration.html
+- https://github.com/marketplace/actions/jekyll-actions
