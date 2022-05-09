@@ -8,7 +8,7 @@ title: ELM 327 OBD 2 WiFi Adapter - What is inside?
 categories: [Hardware]
 ---
 
-The following device
+What is inside this OBD 2 WiFi Adapter?
 
 ![Product Picture](elm-327-obd-2-wifi.jpg)
 
