@@ -13,4 +13,4 @@ running with WSPR in docker with HTML5 VNC support:
 
 ![Example: Running WSJTX in Docker with HTML5](screenshot.png)
 
-See the current spots ![here](http://wsprnet.org/olddb?mode=html&band=all&limit=50&findcall=&findreporter=DG6FL&sort=date).
+See the current spots [here](http://wsprnet.org/olddb?mode=html&band=all&limit=50&findcall=&findreporter=DG6FL&sort=date).
