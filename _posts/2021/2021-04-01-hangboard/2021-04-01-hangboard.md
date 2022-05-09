@@ -18,3 +18,5 @@ This was motivation for me to learn new technologies and build an own smart
 hangboard - which is easy to reproduce for others.
 
 Find the build instructions and sources in [this repo](https://github.com/8cH9azbsFifZ/hangboard).
+
+![Smart Hangboard](./smart_hangboard_v2.png)
