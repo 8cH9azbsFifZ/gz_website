@@ -17,5 +17,5 @@ So now we have CW skimmer and RTL SDR running in containers completely headless 
 ![CW Skimmer](./example_working.png)
 ![RTL SDR as Hermes](./connected.png)
 
-See the current spots [here](http://www.reversebeacon.net/dxsd1/dxsd1.php?f=0&c=DG6FL&t=de).
+See the current spots [here](https://www.reversebeacon.net/main.php?zoom=30.48,24.12,1.45&rows=100&max_age=10,months&spotter_call=DG6FL).
 
