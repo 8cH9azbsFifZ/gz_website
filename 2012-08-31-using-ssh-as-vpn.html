@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <title>Using SSH as VPN</title>
+  <meta name="description" content="One of the not so commonly known features of SSH is: you may use it for a poor man’s VPN.
+">
+  <meta name="author" content="Dr. Gerolf Ziegenhain">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Using SSH as VPN">
+  <meta name="twitter:description" content="One of the not so commonly known features of SSH is: you may use it for a poor man’s VPN.
+">
+  
+  <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Using SSH as VPN">
+  <meta property="og:description" content="One of the not so commonly known features of SSH is: you may use it for a poor man’s VPN.
+">
+  <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="/css/main.css?1729453390211275264">
+  <link rel="canonical" href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2012-08-31-using-ssh-as-vpn.html">
+  <link rel="alternate" type="application/rss+xml" title="Dr. Gerolf Ziegenhain" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Dr. Gerolf Ziegenhain">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Dr. Gerolf Ziegenhain</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Director Planning and Innovation, DFS</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="/#blog" title="link to Dr. Gerolf Ziegenhain blog" class="blog-button">
+                  <i class="fas fa-blog"></i>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="/publications.html" title="link to Dr. Gerolf Ziegenhain publications" class="publication-button">
+                <i class="fas fa-book"></i>
+               </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/gerolfziegenhain" title="gerolfziegenhain on LinkedIn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.xing.com/profile/Gerolf_Ziegenhain" title="Gerolf_Ziegenhain on Xing" target="_blank">
+                  <i class="fab fa-xing"></i>
+                  <span class="label">Xing</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/8cH9azbsFifZ" title="8cH9azbsFifZ on GitHub" target="_blank">
+                  <i class="fab fa-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.qrz.com/db/DG6FL" title="DG6FL on QRZ.com" target="_blank">
+                  <i class="fas fa-broadcast-tower"></i>
+                  <span class="label">QRZ.com</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:g@ziegenhain.com" title="Email g@ziegenhain.com" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="fas fa-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2012-08-31 21:53" class="post-meta__date date">31 Aug 2012</time>
+      
+      &#8226; <span class="post-meta__tags">on <a href="/tags/#Linux">Linux</a>, <a href="/tags/#OSX">OSX</a></span>
+      
+    </div>
+    <h1 class="post-title">Using SSH as VPN</h1>
+  </header>
+
+  <section class="post">
+    <p>One of the not so commonly known features of SSH is: you may use it for a poor man’s VPN.</p>
+
+<p>My Network 1   —   Client   &lt;—SSH—&gt;   Server   — My Network 2</p>
+
+<p><strong>Conventions</strong></p>
+
+<p>USER = username</p>
+
+<p>HOST = ip of the server host</p>
+
+<p>IDENTITY = ssh key file</p>
+
+<p><strong>Preparation of the Server Side</strong>
+Edit the daemon configuration file and restart the sshd afterwards
+#/etc/ssh/sshd_config
+PermitTunnel yes
+**
+<strong>**Open the SSH session from the client side:</strong>
+sudo ssh -i $IDENTITY -F /home/$USER/.ssh/config -vvvw any:any root@$HOST true &amp;</p>
+
+<p><strong>Prepare the local tunnel and configure the routes on the client:</strong></p>
+
+<p>sudo modprobe tun</p>
+
+<p>sudo tunctl -t tun0 -u $USER</p>
+
+<p>sudo ifconfig tun0 10.0.0.2 pointopoint 10.0.0.1</p>
+
+<p>sudo route add -net 192.168.1.0 netmask 255.255.255.0 dev tun0</p>
+
+<p><strong> </strong></p>
+
+<p><strong>Prepare the remote tunnel and configure iptables on the server:</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cat « eof</td>
+      <td>ssh root@$HOST</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>modprobe tun</p>
+
+<p>tunctl -t tun0 -u $USER</p>
+
+<p>ifconfig tun0 10.0.0.1 pointopoint 10.0.0.2</p>
+
+<p>echo 1 &gt; /proc/sys/net/ipv4/ip_forward</p>
+
+<p>iptables -t nat -A POSTROUTING -s 10.0.0.2 -j SNAT –to-source $SERVER_IP</p>
+
+<p>iptables -A FORWARD -d 10.0.0.2 -j ACCEPT</p>
+
+<p>eof</p>
+
+<h2 id="the-whole-script">The whole script:</h2>
+
+<p>#!/bin/bash</p>
+
+<p> </p>
+
+<p>HOST=</p>
+
+<p>SERVER_IP=</p>
+
+<p>USER=</p>
+
+<p>IDENTITY=/home/$USER/.ssh/id_dsa</p>
+
+<p> </p>
+
+<p>sudo ssh -i $IDENTITY -F /home/$USER/.ssh/config -vvvw any:any root@$HOST true &amp;</p>
+
+<p>sleep 5</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>tid=$(ps aux</td>
+      <td>awk ‘/ssh -i/{print$2;exit}’)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p> </p>
+
+<p>echo “Prepare local tunnel”</p>
+
+<p>sudo modprobe tun</p>
+
+<p>sudo tunctl -t tun0 -u $USER</p>
+
+<p>#sudo ifconfig tun0 up 10.0.23.2 netmask 255.255.255.252</p>
+
+<p>sudo ifconfig tun0 10.0.0.2 pointopoint 10.0.0.1</p>
+
+<p>sudo route add -net 192.168.1.0 netmask 255.255.255.0 dev tun0</p>
+
+<p> </p>
+
+<p>echo “Prepare remote tunnel”</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cat « eof</td>
+      <td>ssh root@$HOST</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>modprobe tun</p>
+
+<p>tunctl -t tun0 -u $USER</p>
+
+<p>#ifconfig tun0 up 10.0.23.1 netmask 255.255.255.252</p>
+
+<p>ifconfig tun0 10.0.0.1 pointopoint 10.0.0.2</p>
+
+<p>echo 1 &gt; /proc/sys/net/ipv4/ip_forward</p>
+
+<p>#iptables -t nat -A POSTROUTING -s 10.0.23.2 -j SNAT –to-source $SERVER_IP</p>
+
+<p>#iptables -A FORWARD -d 10.0.23.2 -j ACCEPT</p>
+
+<p>iptables -t nat -A POSTROUTING -s 10.0.0.2 -j SNAT –to-source $SERVER_IP</p>
+
+<p>iptables -A FORWARD -d 10.0.0.2 -j ACCEPT</p>
+
+<p>eof</p>
+
+<p> </p>
+
+<p>echo “Press any key to kill (tid:$tid)”</p>
+
+<p>read</p>
+
+<p>sudo kill -KILL $tid</p>
+
+<p>sudo rmmod tun</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cat « eof</td>
+      <td>ssh root@$HOST </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>rmmod tun</p>
+
+<p>iptables -F</p>
+
+<p>echo 0 &gt; /proc/sys/net/ipv4/ip_forward</p>
+
+<p>eof</p>
+
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2024 Dr. Gerolf Ziegenhain. All rights reserved.</span>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js?1729453390211275264"></script>
+
+
+    </div>
+  </body>
+</html>

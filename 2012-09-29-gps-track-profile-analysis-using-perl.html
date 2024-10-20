@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <title>GPS Track Profile Analysis using Perl</title>
+  <meta name="description" content="In this post I show a small example on how one can easily evaluate GPX track files using Perl and Gnuplot. The idea in brief: Read in GPX track infile.gpx and extract the velocity distribution. In a first approximation I have fitted gaussian distributions…
+">
+  <meta name="author" content="Dr. Gerolf Ziegenhain">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GPS Track Profile Analysis using Perl">
+  <meta name="twitter:description" content="In this post I show a small example on how one can easily evaluate GPX track files using Perl and Gnuplot. The idea in brief: Read in GPX track infile.gpx and extract the velocity distribution. In a first approximation I have fitted gaussian distributions…
+">
+  
+  <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="GPS Track Profile Analysis using Perl">
+  <meta property="og:description" content="In this post I show a small example on how one can easily evaluate GPX track files using Perl and Gnuplot. The idea in brief: Read in GPX track infile.gpx and extract the velocity distribution. In a first approximation I have fitted gaussian distributions…
+">
+  <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="/css/main.css?1729453390211275264">
+  <link rel="canonical" href="file:///Users/gerolfziegenhain/src/g.ziegenhain.com/_site//2012-09-29-gps-track-profile-analysis-using-perl.html">
+  <link rel="alternate" type="application/rss+xml" title="Dr. Gerolf Ziegenhain" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Dr. Gerolf Ziegenhain">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Dr. Gerolf Ziegenhain</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Director Planning and Innovation, DFS</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="/#blog" title="link to Dr. Gerolf Ziegenhain blog" class="blog-button">
+                  <i class="fas fa-blog"></i>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="/publications.html" title="link to Dr. Gerolf Ziegenhain publications" class="publication-button">
+                <i class="fas fa-book"></i>
+               </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/gerolfziegenhain" title="gerolfziegenhain on LinkedIn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.xing.com/profile/Gerolf_Ziegenhain" title="Gerolf_Ziegenhain on Xing" target="_blank">
+                  <i class="fab fa-xing"></i>
+                  <span class="label">Xing</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/8cH9azbsFifZ" title="8cH9azbsFifZ on GitHub" target="_blank">
+                  <i class="fab fa-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.qrz.com/db/DG6FL" title="DG6FL on QRZ.com" target="_blank">
+                  <i class="fas fa-broadcast-tower"></i>
+                  <span class="label">QRZ.com</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:g@ziegenhain.com" title="Email g@ziegenhain.com" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="fas fa-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2012-09-29 23:20" class="post-meta__date date">29 Sep 2012</time>
+      
+      &#8226; <span class="post-meta__tags">on <a href="/tags/#GPX">GPX</a>, <a href="/tags/#Linux">Linux</a></span>
+      
+    </div>
+    <h1 class="post-title">GPS Track Profile Analysis using Perl</h1>
+  </header>
+
+  <section class="post">
+    <p>In this post I show a small example on how one can easily evaluate GPX track files using Perl and Gnuplot. The idea in brief: Read in GPX track <em>infile.gpx</em> and extract the velocity distribution. In a first approximation I have fitted gaussian distributions…</p>
+
+<p>The calculation of distances between two points in WGS 84 coordinates is done using the approach given by <a href="http://en.wikipedia.org/wiki/Vincenty's_formulae">Vincenty</a>. There are methods with an accuracy of up to 10nm (<a href="http://geographiclib.sourceforge.net/">geographiclib</a>, interesting <a href="http://arxiv.org/abs/1002.1417">paper</a> on this topic).</p>
+
+<p><img src="dist_velo.png" alt="Velocity Distribution" /></p>
+
+<h2 id="code-snipplets">Code Snipplets</h2>
+
+<p>The code pieces listed below are extracts of what I have done. Do not expect the code to work - it shall only serve as an idea for you…</p>
+
+<h3 id="perl-script">Perl Script</h3>
+
+<p>#!/usr/bin/perl</p>
+
+<p>use Geo::Gpx;</p>
+
+<p>use Data::Dumper;</p>
+
+<p>use DateTime;</p>
+
+<p>use GIS::Distance;</p>
+
+<p>use Statistics::Lite qw(:all);</p>
+
+<p>use POSIX;</p>
+
+<p>my $gis = GIS::Distance-&gt;new();</p>
+
+<p>$gis-&gt;formula (“Vincenty”);</p>
+
+<p>my $fh = “infile.gpx”;</p>
+
+<p> </p>
+
+<h1 id="extract-vlat-from-gpx-file">Extract vlat from GPX file</h1>
+
+<p>my $gpx = Geo::Gpx-&gt;new( input =&gt; $fh );</p>
+
+<p>my $waypoints = $gpx-&gt;waypoints();</p>
+
+<p>my $tracks = $gpx-&gt;tracks();</p>
+
+<p>my $iter = $gpx-&gt;iterate_trackpoints(); #points();</p>
+
+<p>my (@time, @lat, @lon, @ele);</p>
+
+<p>while (my $pt = $iter-&gt;())</p>
+
+<p>{</p>
+
+<p>push (@time, $pt-&gt;{time}); # Linux Epoch time</p>
+
+<p>push (@lat,$pt-&gt;{lat}); # WGS 84</p>
+
+<p>push (@lon, $pt-&gt;{lon}); # WGS 84</p>
+
+<p>push (@ele, $pt-&gt;{ele}); # meters</p>
+
+<p>}</p>
+
+<p>my %s_time = statshash (@time);</p>
+
+<p>my %s_lat = statshash (@lat);</p>
+
+<p>my %s_lon = statshash (@lon);</p>
+
+<p>my %s_ele = statshash (@ele);</p>
+
+<p>my $n = 1+$#time;</p>
+
+<p> </p>
+
+<h1 id="velocities">Velocities</h1>
+
+<p>my (@vlat, @dlateral_next, @vhor);</p>
+
+<p>my $ms_kmh = 3.6;</p>
+
+<p>for my $i (0..$n-2)</p>
+
+<p>{</p>
+
+<p>my $d = $gis-&gt;distance ($lat[$i],$lon[$i] =&gt; $lat[$i+1],$lon[$i+1]); </p>
+
+<p>my $dlateral = $d-&gt;meters(); # meters</p>
+
+<p>my $dhorizontal = $ele[$i+1]-$ele[$i]; # meters</p>
+
+<p>my $dt = $time[$i+1]-$time[$i]; # seconds</p>
+
+<p>$dt &gt; 0 or warn;</p>
+
+<p>$dt &gt; 0 or next;</p>
+
+<p>my $vv = sqrt($dlateral**2)/$dt * $ms_kmh; </p>
+
+<p>my $hh = sqrt($dhorizontal**2)/$dt * $ms_kmh;</p>
+
+<p>push (@vlat, $vv); # km/h</p>
+
+<p>push (@vhor, $hh); # km/h</p>
+
+<p>push (@dlateral_next, $dlateral); # meters</p>
+
+<p>}</p>
+
+<p>my %s_vlat = statshash (@vlat);</p>
+
+<p>my %s_vhor = statshash (@vhor);</p>
+
+<p>my %s_dlateral_next = statshash (@dlateral_next);</p>
+
+<p> </p>
+
+<h1 id="distribution">Distribution</h1>
+
+<p>sub distribution</p>
+
+<p>{</p>
+
+<p>my $nbins = floor(sqrt($n));</p>
+
+<p>my $nsigma = 2;</p>
+
+<p>my ($min, $max) = ($s_vlat{mean}-$nsigma<em>$s_vlat{stddev}, $s_vlat{mean}+$nsigma</em>$s_vlat{stddev});</p>
+
+<p>my $d = ($max - $min) / $nbins;</p>
+
+<p>my %hist;</p>
+
+<p>for my $i (0..$nbins-1)</p>
+
+<p>{</p>
+
+<p>$hist{$i}{x} = $min+($i+.5)*$d;</p>
+
+<p>}</p>
+
+<p>for my $i (0..$n-2)</p>
+
+<p>{</p>
+
+<p>my $bin = floor(($vlat[$i]-$min)/$d);</p>
+
+<p>$bin &lt; 0 and warn;</p>
+
+<p>$bin &lt; 0 and $bin = 0;</p>
+
+<p>$bin &gt;= $nbins and warn;</p>
+
+<p>$bin &gt;= $nbins and $bin = $nbins-1;</p>
+
+<p>$hist{$bin}{y} = $hist{$bin}{y}+1;</p>
+
+<p>}</p>
+
+<p>my $f_dist = “dist.txt”;</p>
+
+<p>open (F_DIST, “&gt;”.$f_dist);</p>
+
+<p>for my $j (0..$nbins-1)</p>
+
+<p>{</p>
+
+<p>printf F_DIST “%d %f %f\n”, $j, $hist{$j}{x}, $hist{$j}{y};</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p> </p>
+
+<p>distribution();</p>
+
+<h2 id="gnuplot-fitting">GnuPlot Fitting</h2>
+
+<p>f1(x) = p1*exp(-(x-m1)<strong>2/(2*s1</strong>2))</p>
+
+<p>f2(x) = p2*exp(-(x-m2)<strong>2/(2*s2</strong>2))</p>
+
+<p>f3(x) = p3*exp(-(x-m3)<strong>2/(2*s3</strong>2))</p>
+
+<p>m1=120</p>
+
+<p>m2=80</p>
+
+<p>m3=50</p>
+
+<p>f(x) = f1(x)+f2(x)+f3(x)</p>
+
+<p>fit f(x) “dist.txt” u 2:3 via p1,p2,p3,m1,m2,m3,s1,s2,s3</p>
+
+<p>plot  ”dist.txt” u 2:3 w l,f(x)</p>
+
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2024 Dr. Gerolf Ziegenhain. All rights reserved.</span>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js?1729453390211275264"></script>
+
+
+    </div>
+  </body>
+</html>
